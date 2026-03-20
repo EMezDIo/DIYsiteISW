@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diy projects</title>
+    <link rel="stylesheet" href="./CSS/ribbonStyle.css">
+    <link rel="stylesheet" href="./CSS/indexStyle.css">
 </head>
 <body>
     <div id="ribbon">
-        <a href="./register.html" class="button-link">Register</a>
-        <button id = loginbut>Log In</button>
-
-        <button id="filters">Filters</button>
-        <label for="searchbox">Search:</label>
-        <input type="text" id="searchbox" name="fname">
-        <button id="Search">Icon</button><!-- icnoita de search gen o lupa -->
-    
-
-        <a href="./mythings.html" class="button-link">My Projects</a>
-        <a href="./myprofile.html">Profil</a> <!-- icnoita de profil -->
-        <a href="./myfavourites.html">Favorite</a> <!-- icnoita de favorite -->
+        <div id="box">
+            <a class="button-link" href="./index.html">Home</a>
+            <a class="button-link" href="./myfavourites.html">Favorite</a> <!-- icnoita de favorite -->
+            <a href="./mythings.html" class="button-link">My Projects</a>
+        </div>
+        <div id="box">
+            <button class="button-link" id="filters">Filters</button>
+            <label id="searchLabel" for="searchbox">Search:</label>
+            <input type="text" id="searchbox" name="fname">
+            <button class="button-link" id="Search">🔍</button><!-- icnoita de search gen o lupa -->
+        </div>
+        <div id="box">
+            <a class="button-link" href="./myprofile.html">Profile</a> <!-- icnoita de profil -->
+            <button class="button-link" id = loginbut>Log In</button>
+            <a href="./register.html" class="button-link">Register</a>
+        </div>
 
     </div>
 
-    <div id="proiecte"></div>
+
+    <div id="proiecte">
+        <h1 id="weekpick">THIS WEEK'S PICK</h1>
+    </div>
+
+
+
     <div id="nextpg"></div>
 </body>
 </html>

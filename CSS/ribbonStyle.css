@@ -1,0 +1,77 @@
+#ribbon{
+    width: 100%;
+    background-color: purple;
+    margin:0px;
+    align-content: center;
+    display: flex;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.button-link {
+    display: inline-block; 
+    padding: 8px 20px;    
+    
+    
+    text-decoration: none; 
+    color: #ffffff;       
+    font-weight: bold;
+    font-size: 12px;
+    
+    
+    background-color: #ff4bd8; 
+    border-radius: 2px;        
+    border: none;              
+    
+    
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth hover effects */
+    cursor: pointer; /* Ensures the mouse turns into a hand */
+}
+
+/* The Hover State (what happens when the mouse is over it) */
+.button-link:hover {
+     background-color: #b3006ec4; /* A slightly darker blue for feedback */
+}
+
+/* The Active State (what happens when you click down) */
+.button-link:active {
+    transform: scale(0.96); /* Makes the button press down slightly */
+}
+body{
+    margin:0px;
+    background-color: lightgray;
+    font-family: monospace;
+}
+
+#searchLabel{
+    display: inline-block; 
+    padding: 8px 20px;    
+    
+    
+    text-decoration: none; 
+    color: #ffffff;       
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    
+    
+    background-color: #ff4bd8; 
+    border-radius: 2px;        
+    border: none;
+}
+#searchbox{
+    background-color: #ffffff6c;
+    padding: 6px 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100px; /* Prevents it from getting too wide on big screens */
+    border-radius: 50px; /* A high pixel count makes pill-shaped rounded edges */
+    outline: none;
+    transition: border-color 0.3s ease;
+}

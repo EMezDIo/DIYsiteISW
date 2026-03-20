@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="./CSS/ribbonStyle.css">
+
 </head>
 <body>
-    <!--bara de ribbon cu searchul etc-->
+    <div id="ribbon">
+        <div id="box">
+            <a class="button-link" href="./index.html">Home</a>
+            <a class="button-link" href="./myfavourites.html">Favorite</a> <!-- icnoita de favorite -->
+            <a href="./mythings.html" class="button-link">My Projects</a>
+        </div>
+        <div id="box">
+            <button class="button-link" id="filters">Filters</button>
+            <label id="searchLabel" for="searchbox">Search:</label>
+            <input type="text" id="searchbox" name="fname">
+            <button class="button-link" id="Search">🔍</button><!-- icnoita de search gen o lupa -->
+        </div>
+        <div id="box">
+            <a class="button-link" href="./myprofile.html">Profile</a> <!-- icnoita de profil -->
+            <button class="button-link" id = loginbut>Log In</button>
+            <a href="./register.html" class="button-link">Register</a>
+        </div>
+
+    </div>
     <div>
-        <label for="usrname">Username: </label>
-        <input type="text" fname="usrname" name="usrname">
-        <label for="email">Email: </label>
-        <input type="text" fname="email" name="email">
-        <label for="passwd">Password: </label>
-        <input type="text" fname="passwd" name="passwd">
-        <label for="repasswd">Retype Password: </label>
-        <input type="text" fname="repasswd" name="repasswd">
+        <input placeholder="Username" type="text" fname="usrname" name="usrname"> <br>
+
+        <input placeholder="ex: youremail@gmail.com" type ="text" fname="email" name="email"><br>
+    
+        <input placeholder="Password" type="text" fname="passwd" name="passwd"><br>
+
+        <input placeholder="Retype Password" type="text" fname="repasswd" name="repasswd">
+
+        <p id="pswdNotM"></p>
+        <button id="register">Register</button>
     </div>
 </body>
 </html>
